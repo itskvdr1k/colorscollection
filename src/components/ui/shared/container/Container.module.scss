@@ -1,0 +1,8 @@
+/* Container */
+
+.container {
+    width: min(400px, 100vw);
+    padding: 40px;
+    display: flex;  
+    flex-direction: column;
+}
