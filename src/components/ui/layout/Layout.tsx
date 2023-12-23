@@ -4,6 +4,7 @@ import { PropsWithChildren } from "react";
 import Header from "./header/Header";
 import { useColorContext } from "@/contexts/ColorContext";
 import Footer from "./footer/Footer";
+import LayoutContainer from "./LayoutContainer";
 
 export default function Layout({ children }: PropsWithChildren) {
     const {redValue, blueValue, greenValue} = useColorContext()
@@ -11,9 +12,11 @@ export default function Layout({ children }: PropsWithChildren) {
         <div className="wrapper" style={{ backgroundColor: `rgb(${redValue}, ${greenValue}, ${blueValue})` }}>
             <Header/>
             <main className="main">
-                <div className="main__body">
-                    {children}
-                </div>
+                <LayoutContainer>
+                    <div className="main__body">
+                        {children}
+                    </div>
+                </LayoutContainer>
             </main>
             <Footer/>
         </div>

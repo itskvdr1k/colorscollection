@@ -6,11 +6,12 @@ import { useColorContext } from "@/contexts/ColorContext"
 import Container from "../shared/container/Container"
 import Section from "../shared/section/Section"
 import ColorPickerSave from "./ColorPickerSave"
+import LayoutContainer from "../layout/LayoutContainer"
 
 export default function ColorPicker() {
     const {redValue, setRedValue, blueValue, setBlueValue, greenValue, setGreenValue} = useColorContext()
     return (
-        <Container className={`${styles.colorPicker}  glass__effect`}>
+        <Container className={`${styles.colorPicker} glass__effect`}>
             <Section sectionTitle="Picker">
                 <div className={styles.colorPicker__body}>
                     <div className={styles.colorPicker__controls}>
