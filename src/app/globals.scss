@@ -17,6 +17,9 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+button {
+  color: inherit;
+}
 
 /* Glassmorphism effect */
 .glass__effect {
