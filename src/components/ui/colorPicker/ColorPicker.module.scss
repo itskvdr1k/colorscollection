@@ -31,7 +31,7 @@
         align-items: center;
         background-color: rgb(54, 161, 255);
         height: 60px;
-        width: 160px;
+        width: 180px;
         border: none;
         cursor: pointer;
         border-radius: 25px;
@@ -41,6 +41,9 @@
 
         &:disabled {
             background-color: rgba(54, 161, 255, 0.8);
+        }
+        &:hover, &:focus {
+            background-color: rgb(34, 152, 255);
         }
     }
 }

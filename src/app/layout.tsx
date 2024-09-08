@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   description: 'Color Palette is a tool, helping you to choose you favority color',
   keywords: "color, palette, rgb",
   authors: [{name: "kvdr1k", url: "https://instagram.com/kvdr1k"}],
+  creator: "kvdr1k",
   verification: {
     google: "zpCW_D1k8wBVNT0gqY0w2OGcyhojRU4-EN6tuiSy-g8"
   },
@@ -26,6 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel='icon' href="/favicon.png"/>
+      </head>
       <body className={inter.className}>
         <Providers>
           {children}

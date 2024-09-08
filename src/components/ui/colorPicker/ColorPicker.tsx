@@ -6,7 +6,6 @@ import { useColorContext } from "@/contexts/ColorContext"
 import Container from "../shared/container/Container"
 import Section from "../shared/section/Section"
 import ColorPickerSave from "./ColorPickerSave"
-import LayoutContainer from "../layout/LayoutContainer"
 
 export default function ColorPicker() {
     const {redValue, setRedValue, blueValue, setBlueValue, greenValue, setGreenValue} = useColorContext()
